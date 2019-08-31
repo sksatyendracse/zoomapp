@@ -11,10 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-});
-
+Route::view('/', 'welcome');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/login/frontadmin', 'Auth\LoginController@showAdminLoginForm');
+Route::get('/login/writer', 'Auth\LoginController@showWriterLoginForm');
+Route::get('/register/frontadmin', 'Auth\RegisterController@showAdminRegisterForm');
+Route::get('/register/writer', 'Auth\RegisterController@showWriterRegisterForm');
+
+Route::post('/login/frontadmin', 'Auth\LoginController@adminLogin');
+Route::post('/login/writer', 'Auth\LoginController@writerLogin');
+Route::post('/register/frontadmin', 'Auth\RegisterController@createAdmin');
+Route::post('/register/writer', 'Auth\RegisterController@createWriter');
+
+Route::view('/home', 'home')->middleware('auth');
+Route::view('/frontadmin', 'frontadmin');
+Route::view('/writer', 'writer');

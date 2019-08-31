@@ -49,6 +49,14 @@ return [
             'driver' => 'passport',
             'provider' => 'admins',
         ],
+        'frontadmin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+        'writer' => [
+            'driver' => 'session',
+            'provider' => 'writers',
+        ]
     ],
 
     /*
@@ -77,6 +85,14 @@ return [
             'driver' => 'eloquent',
             'model' => App\Admin::class,
         ],
+        'frontadmins' => [
+            'driver' => 'eloquent',
+            'model' => App\Frontend\Admin::class,
+        ],
+        'writers' => [
+            'driver' => 'eloquent',
+            'model' => App\Frontend\Writer::class,
+        ]
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

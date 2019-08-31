@@ -1,0 +1,10 @@
+https://pusher.com/tutorials/multiple-authentication-guards-laravel
+php artisan db:seed
+ $ touch resources/views/layouts/auth.blade.php
+    $ touch resources/views/admin.blade.php
+    $ touch resources/views/writer.blade.php
+    $ touch resources/views/home.blade.php
+
+
+ http://localhost:8000/register/frontadmin
+ 
