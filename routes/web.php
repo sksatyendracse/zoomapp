@@ -11,7 +11,10 @@
 |
 */
 
-Route::view('/', 'welcome');
+Route::view('/', 'index');
+Route::view('/contact', 'frontpages.contact');
+Route::view('/about', 'frontpages.about');
+Route::view('/aarhoan', 'frontpages.aarhoan');
 Auth::routes();
 
 Route::get('/login/frontadmin', 'Auth\LoginController@showAdminLoginForm');
@@ -25,5 +28,9 @@ Route::post('/register/frontadmin', 'Auth\RegisterController@createAdmin');
 Route::post('/register/writer', 'Auth\RegisterController@createWriter');
 
 Route::view('/home', 'home')->middleware('auth');
-Route::view('/frontadmin', 'frontadmin');
+Route::view('/frontadmin', 'dashboard');
+Route::get('/frontadmin/home',array('as'=>'summernoteeditor.get','uses'=>'SummernoteController@getSummernoteeditor'));
+Route::post('/frontadmin/summernoteeditor',array('as'=>'summernoteeditor.post','uses'=>'SummernoteController@postSummernoteeditor'));
+
+
 Route::view('/writer', 'writer');
