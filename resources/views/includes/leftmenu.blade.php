@@ -70,7 +70,36 @@
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layers-alt"></i> <span>Pages</span></a>
                                 <ul class="collapse">
-                                    <li><a href="{{ route('summernoteeditor.get', ['id' => 1]) }}">Home</a></li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 1]) }}">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 2]) }}">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 3]) }}">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 4]) }}">{{__('messages.Mobile_Accessories')}}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 5]) }}">{{__('messages.Recharges')}}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 6]) }}">{{__('messages.Photocopies')}}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 7]) }}">{{__('messages.Electricals_Servies')}}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 8]) }}">{{__('messages.Office_Use')}}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 9]) }}">{{__('messages.All_Types_Books')}}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('summernoteeditor.get', ['id' => 10]) }}">{{__('messages.Aarohan_Classes')}}</a>
+                                    </li>
                                 </ul>
                             </li>
                             <!--li>

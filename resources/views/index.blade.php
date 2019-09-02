@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
-    @section('content')
+  @section('pageTitle', '')
+  @section('content')
 
 
 

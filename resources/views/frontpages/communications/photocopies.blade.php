@@ -1,7 +1,8 @@
 @extends('layouts.frontend')
-@section('pageTitle', '| Contact Us')
+@section('pageTitle', '| Photocopies')
 @section('content')
 @include('includes.breadcums')
+
     <!-- Content Row -->
     <div class="row">
       <!-- Map Column -->

@@ -6,10 +6,10 @@ php artisan db:seed
     $ touch resources/views/home.blade.php
 
 
- http://localhost:8000/register/frontadmin
- https://github.com/BlackrockDigital/startbootstrap-modern-business
- https://startbootstrap.com/previews/modern-business/
- https://www.codewall.co.uk/install-summernote-with-laravel-tutorial/
+http://localhost:8000/register/frontadmin
+https://github.com/BlackrockDigital/startbootstrap-modern-business
+https://startbootstrap.com/previews/modern-business/
 https://www.codewall.co.uk/install-summernote-with-laravel-tutorial/
 https://cdnjs.com/libraries/summernote
+https://colorlib.com/polygon/srtdash/index.html
  

@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-@section('pageTitle', '| Aarohan Classes')
+@section('pageTitle', '| Mobile Accessories')
 @section('content')
 @include('includes.breadcums')
 

@@ -10,7 +10,11 @@ class SummernoteController extends Controller
 {
     public function __construct()
     {
-        //$this->middleware('guest:frontadmin')->except('logout');
+        $this->middleware('auth:frontadmin')->except('logout');
+    }
+
+    public function index(){
+        return view('dashboard');   
     }
 
     public function getSummernoteeditor(Request $request){
@@ -23,7 +27,6 @@ class SummernoteController extends Controller
     public function postSummernoteeditor(Request $request)
     {
         $this->validate($request, [
-            'id' => 'required',
             'detail' => 'required',
             'feature' => 'required',
         ]);
@@ -50,7 +53,11 @@ class SummernoteController extends Controller
            }
         }
         $detail = $dom->saveHTML();
-        $summernote = Summernote::getData($id_summer);
+        if($id_summer){
+            $summernote = Summernote::getData($id_summer);
+        }else{
+            $summernote = new Summernote;
+        }
         $summernote->content = $detail;
         $summernote->title=$feature;
         $summernote->created_by=Auth::guard('frontadmin')->user()->id;

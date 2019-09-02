@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
-@section('pageTitle', '| Aarohan Classes')
+@section('pageTitle', '| Office Use')
 @section('content')
+ 
 @include('includes.breadcums')
 
     <!-- Image Header -->

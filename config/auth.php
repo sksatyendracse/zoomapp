@@ -51,7 +51,7 @@ return [
         ],
         'frontadmin' => [
             'driver' => 'session',
-            'provider' => 'admins',
+            'provider' => 'frontadmins',
         ],
         'writer' => [
             'driver' => 'session',
@@ -87,11 +87,11 @@ return [
         ],
         'frontadmins' => [
             'driver' => 'eloquent',
-            'model' => App\Frontend\Admin::class,
+            'model' => App\Model\Frontend\Admin::class,
         ],
         'writers' => [
             'driver' => 'eloquent',
-            'model' => App\Frontend\Writer::class,
+            'model' => App\Model\Frontend\Writer::class,
         ]
         // 'users' => [
         //     'driver' => 'database',

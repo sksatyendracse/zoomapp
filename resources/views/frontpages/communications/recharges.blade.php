@@ -1,7 +1,8 @@
 @extends('layouts.frontend')
-@section('pageTitle', '| About Us')
+@section('pageTitle', '| Recharges (Mobile + DTH)')
 @section('content')
 @include('includes.breadcums')
+
     <!-- Intro Content -->
     <div class="row">
       <div class="col-lg-6">
