@@ -11,20 +11,20 @@
 |
 */
 
-Route::view('/', 'index');
-Route::view('/contact', 'frontpages.contact');
-Route::view('/about', 'frontpages.about');
+Route::get('/', 'FrontHomeController@index');
+Route::get('/contact', 'FrontHomeController@contact');
+Route::get('/about', 'FrontHomeController@about');
 
-Route::view('/mobile_accessories', 'frontpages.communications.mobile_accessories');
-Route::view('/recharges', 'frontpages.communications.recharges');
-Route::view('/photocopies', 'frontpages.communications.photocopies');
+Route::get('/mobile_accessories', 'FrontHomeController@mobileAccessories');
+Route::get('/recharges', 'FrontHomeController@recharges');
+Route::get('/photocopies', 'FrontHomeController@photocopies');
 
-Route::view('/electricals_services', 'frontpages.electricals.electricals_services');
+Route::get('/electricals_services', 'FrontHomeController@electricalsServices');
 
-Route::view('/office_use', 'frontpages.stationaries.office_use');
-Route::view('/all_types_books', 'frontpages.stationaries.all_types_books');
+Route::get('/office_use', 'FrontHomeController@officeUse');
+Route::get('/all_types_books', 'FrontHomeController@allTypesBooks');
 
-Route::view('/aarhoan', 'frontpages.aarhoan');
+Route::get('/aarhoan', 'FrontHomeController@aarhoan');
 Auth::routes();
 
 Route::get('/login/frontadmin', 'Auth\LoginController@showAdminLoginForm');

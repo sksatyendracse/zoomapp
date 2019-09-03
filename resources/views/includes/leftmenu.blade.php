@@ -69,35 +69,35 @@
                             <li><a href="invoice.html"><i class="ti-receipt"></i> <span>Invoice Summary</span></a></li-->
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layers-alt"></i> <span>Pages</span></a>
-                                <ul class="collapse">
-                                    <li>
+                                <ul class="collapse {{(Request::path() == 'frontadmin/home')?'in':''}}">
+                                    <li class="{{(Request::get('id') == 1)?'active':''}}">
                                         <a href="{{ route('summernoteeditor.get', ['id' => 1]) }}">Home</a>
                                     </li>
-                                    <li>
+                                    <li class="{{(Request::get('id') == 2)?'active':''}}">
                                         <a href="{{ route('summernoteeditor.get', ['id' => 2]) }}">About</a>
                                     </li>
-                                    <li>
+                                    <li class="{{(Request::get('id') == 3)?'active':''}}">
                                         <a href="{{ route('summernoteeditor.get', ['id' => 3]) }}">Contact</a>
                                     </li>
-                                    <li>
+                                    <li class="{{(Request::get('id') == 4)?'active':''}}">
                                         <a href="{{ route('summernoteeditor.get', ['id' => 4]) }}">{{__('messages.Mobile_Accessories')}}</a>
                                     </li>
-                                    <li>
+                                    <li class="{{(Request::get('id') == 5)?'active':''}}" >
                                         <a href="{{ route('summernoteeditor.get', ['id' => 5]) }}">{{__('messages.Recharges')}}</a>
                                     </li>
-                                    <li>
+                                    <li class="{{(Request::get('id') == 6)?'active':''}}">
                                         <a href="{{ route('summernoteeditor.get', ['id' => 6]) }}">{{__('messages.Photocopies')}}</a>
                                     </li>
-                                    <li>
+                                    <li class="{{(Request::get('id') == 7)?'active':''}}">
                                         <a href="{{ route('summernoteeditor.get', ['id' => 7]) }}">{{__('messages.Electricals_Servies')}}</a>
                                     </li>
-                                    <li>
+                                    <li class="{{(Request::get('id') == 8)?'active':''}}">
                                         <a href="{{ route('summernoteeditor.get', ['id' => 8]) }}">{{__('messages.Office_Use')}}</a>
                                     </li>
-                                    <li>
+                                    <li class="{{(Request::get('id') == 9)?'active':''}}">
                                         <a href="{{ route('summernoteeditor.get', ['id' => 9]) }}">{{__('messages.All_Types_Books')}}</a>
                                     </li>
-                                    <li>
+                                    <li class="{{(Request::get('id') == 10)?'active':''}}">
                                         <a href="{{ route('summernoteeditor.get', ['id' => 10]) }}">{{__('messages.Aarohan_Classes')}}</a>
                                     </li>
                                 </ul>
